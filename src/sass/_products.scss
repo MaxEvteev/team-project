@@ -1,0 +1,68 @@
+.products__label {
+  color: var(--accent-color);
+  font-family: 'Titan One';
+  font-size: 18px;
+  text-align: center;
+}
+
+.products__title {
+  color: var(--main-color);
+  font-family: 'Titan One';
+  font-size: 34px;
+  text-align: center;
+}
+
+.products__list {
+  padding: 0px;
+  list-style: none;
+}
+
+.products__subtitle {
+  font-family: 'Titan One';
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  color: var(--white-text-color);
+  text-align: center;
+}
+
+.products__subtitle::before {
+  content: url(../images/ice-coffee.png);
+  z-index: 2;
+}
+
+.products__item {
+  border-radius: 24px;
+  height: 485px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.products__text {
+  color: var(--white-text-color);
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.52;
+  margin: 30px 40px;
+  margin-bottom: 111px;
+
+  display: flex;
+  width: 200px;
+}
+
+.ice-cream {
+  background-color: var(--hero-header-background-color);
+}
+
+// .ice-cream::before {
+//   content: url(../images/ice-coffee.png);
+// }
+
+.ice-coffee {
+  background-color: var(--ice-coffe-backgroung);
+}
+
+.milkshakes {
+  background-color: var(--milkshakes-backgroung);
+}

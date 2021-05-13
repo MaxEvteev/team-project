@@ -2,7 +2,8 @@
   color: var(--accent-color);
   font-family: 'Titan One';
   font-size: 18px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .products__title {
@@ -10,11 +11,22 @@
   font-family: 'Titan One';
   font-size: 34px;
   text-align: center;
+  margin-top: 15px;
+  margin-bottom: 31px;
 }
 
 .products__list {
   padding: 0px;
+  margin: 0px;
   list-style: none;
+  display: flex;
+  justify-content: center;
+
+  @media screen and(max-width:767px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .products__subtitle {
@@ -25,17 +37,32 @@
   text-align: center;
 }
 
-.products__subtitle::before {
-  content: url(../images/ice-coffee.png);
-  z-index: 2;
-}
-
 .products__item {
   border-radius: 24px;
+  width: 280px;
   height: 485px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 16px;
+
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    width: 220px;
+    margin-right: 20px;
+    margin-bottom: 112px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 335px;
+    margin-right: 24px;
+    margin-bottom: 119px;
+  }
+}
+
+.products__list .products__item:last-child {
+  @media screen and(min-width:768px) {
+    margin-right: 0px;
+  }
 }
 
 .products__text {
@@ -43,21 +70,26 @@
   font-family: 'DM Sans';
   font-size: 14px;
   font-weight: 700;
+  font-style: normal;
   line-height: 1.52;
+  letter-spacing: 0.04em;
   margin: 30px 40px;
   margin-bottom: 111px;
+  text-align: center;
 
-  display: flex;
-  width: 200px;
+  @media screen and(min-width:768px) {
+    margin: 30px 11px;
+  }
+
+  @media screen and(min-width:1200px) {
+    font-size: 16px;
+    margin: 32px 44px;
+  }
 }
 
 .ice-cream {
   background-color: var(--hero-header-background-color);
 }
-
-// .ice-cream::before {
-//   content: url(../images/ice-coffee.png);
-// }
 
 .ice-coffee {
   background-color: var(--ice-coffe-backgroung);
@@ -65,4 +97,10 @@
 
 .milkshakes {
   background-color: var(--milkshakes-backgroung);
+}
+
+.span {
+  @media screen and(min-width:768px) {
+    display: none;
+  }
 }

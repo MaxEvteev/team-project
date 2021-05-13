@@ -1,0 +1,26 @@
+.section-gallery {
+  background-image: linear-gradient(
+    to bottom,
+    var(--background-pink-color) 40%,
+    var(--white-text-color) 40%
+  );
+  object-fit: contain;
+}
+.section-gallery .container {
+  display: flex;
+  justify-content: center;
+  @media screen and(max-width:480px) {
+    height: 122px;
+  }
+  @media screen and(min-width:768px) {
+    height: 264px;
+  }
+  @media screen and(min-width:1200px) {
+    height: 430px;
+  }
+}
+.section-gallery__immage {
+  display: block;
+  width: 100%;
+  height: auto;
+}

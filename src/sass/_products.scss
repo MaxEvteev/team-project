@@ -33,7 +33,7 @@
 
 .products__list {
   padding: 0px;
-  margin-top: 250px;
+  margin-top: 144px;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -42,6 +42,10 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-top: 250px;
   }
 }
 
@@ -52,6 +56,15 @@
   color: var(--white-text-color);
   text-align: center;
   margin-top: 161px;
+
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    margin-top: 152px;
+  }
+
+  @media screen and(min-width:1200px) {
+    font-size: 30px;
+    margin-top: 163px;
+  }
 }
 
 .products__item {
@@ -62,7 +75,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 130px;
 
   @media screen and(min-width:768px) and (max-width: 1199px) {
     width: 220px;
@@ -108,7 +121,15 @@
 .products__image {
   position: absolute;
   left: 0px;
-  top: -45%;
+  top: -26%;
+
+  @media screen and(min-width:768px) {
+    top: -23%;
+  }
+
+  @media screen and(min-width:1200px) {
+    top: -45%;
+  }
 }
 
 .ice-cream {

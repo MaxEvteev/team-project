@@ -4,6 +4,14 @@
   font-size: 18px;
   display: flex;
   justify-content: center;
+
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    font-size: 26px;
+  }
+
+  @media screen and(min-width:1200px) {
+    font-size: 30px;
+  }
 }
 
 .products__title {
@@ -13,11 +21,19 @@
   text-align: center;
   margin-top: 15px;
   margin-bottom: 31px;
+
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    font-size: 48px;
+  }
+
+  @media screen and(min-width:1200px) {
+    font-size: 58px;
+  }
 }
 
 .products__list {
   padding: 0px;
-  margin: 0px;
+  margin-top: 250px;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -35,9 +51,11 @@
   letter-spacing: 0.04em;
   color: var(--white-text-color);
   text-align: center;
+  margin-top: 161px;
 }
 
 .products__item {
+  position: relative;
   border-radius: 24px;
   width: 280px;
   height: 485px;
@@ -85,6 +103,12 @@
     font-size: 16px;
     margin: 32px 44px;
   }
+}
+
+.products__image {
+  position: absolute;
+  left: 0px;
+  top: -45%;
 }
 
 .ice-cream {

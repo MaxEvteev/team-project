@@ -4,7 +4,22 @@
     <h2 class="products__title">PRODUCTS</h2>
     <ul class="products__list">
       <li class="products__item ice-cream">
-      
+        <picture>
+          <source
+            srcset="./images/ice-cream-mobile.png 1x, ./images/ice-cream-mobile@2x.png 2x"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="./images/ice-cream-tablet.png 1x, ./images/ice-cream-tablet@2x.png 2x"
+            media="(max-width: 1279px)"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/ice-cream-desktop.png 1x, ./images/ice-cream-desktop@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <img src="./images/ice-cream-mobile.png" alt="ice-cream" class="products__image" />
+        </picture>
         <h3 class="products__subtitle">ICE CREAM</h3>
         <div class="products__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -12,6 +27,22 @@
         </div>
       </li>
       <li class="products__item ice-coffee">
+        <picture>
+          <source
+            srcset="./images/ice-coffee-mobile.png 1x, ./images/ice-coffee-mobile@2x.png 2x"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="./images/ice-coffee-tablet.png 1x, ./images/ice-coffee-tablet@2x.png 2x"
+            media="(max-width: 1279px)"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/ice-coffee-desktop.png 1x, ./images/ice-coffee-desktop@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <img src="./images/ice-coffee-mobile.png" alt="ice-coffee" class="products__image" />
+        </picture>
         <h3 class="products__subtitle">ICE COFFEE</h3>
         <div class="products__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -19,6 +50,19 @@
         </div>
       </li>
       <li class="products__item milkshakes">
+        <picture>
+          <source srcset="./images/milkshakes-mobile.png 1x" media="(max-width: 767px)" />
+          <source
+            srcset="./images/milkshakes-tablet.png 1x, ./images/milkshakes-tablet@2x.png 2x"
+            media="(max-width: 1279px)"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/milkshakes-desktop.png 1x, ./images/milkshakes-desktop@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <img src="./images/milkshakes-mobile.png" alt="milkshakes" class="products__image" />
+        </picture>
         <h3 class="products__subtitle">MILKSHAKES</h3>
         <div class="products__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt

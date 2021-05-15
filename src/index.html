@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team-project</title>
+    <title>Ice Cream</title>
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
       rel="stylesheet"
@@ -30,47 +30,48 @@
 
     <include src="./partials/example.html"></include>
 
-<!-- Слайдер секции Customer Reviews -->
-<script>
-  /* Индекс слайда по умолчанию */
-  var slideIndex = 1;
-  showSlides(slideIndex);
+    <!-- Слайдер секции Customer Reviews -->
+    <script>
+      /* Индекс слайда по умолчанию */
+      var slideIndex = 1;
+      showSlides(slideIndex);
 
-  /* Функция увеличивает индекс на 1, показывает следующй слайд*/
-  function plusSlide() {
-    showSlides(slideIndex += 1);
-  }
+      /* Функция увеличивает индекс на 1, показывает следующй слайд*/
+      function plusSlide() {
+        showSlides((slideIndex += 1));
+      }
 
-  /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
-  function minusSlide() {
-    showSlides(slideIndex -= 1);
-  }
+      /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+      function minusSlide() {
+        showSlides((slideIndex -= 1));
+      }
 
-  /* Устанавливает текущий слайд */
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
+      /* Устанавливает текущий слайд */
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
 
-  /* Основная функция слайдера */
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("item");
-    var dots = document.getElementsByClassName("slider-dots_item");
-    if (n > slides.length) {
-      slideIndex = 1
-    }
-    if (n < 1) {
-      slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-  }</script>
+      /* Основная функция слайдера */
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName('item');
+        var dots = document.getElementsByClassName('slider-dots_item');
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(' active', '');
+        }
+        slides[slideIndex - 1].style.display = 'block';
+        dots[slideIndex - 1].className += ' active';
+      }
+    </script>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>

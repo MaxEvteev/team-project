@@ -1,0 +1,167 @@
+/* Cлайдер */
+.section-customer-reviews {
+  margin-top: 80px;
+  @media screen and(min-width:768px) {
+    margin-top: 120px;
+  }
+}
+
+.slider {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.slider .item {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.6s;
+  animation-name: fade;
+  animation-duration: 0.6s;
+}
+
+.slider .item img {
+  margin: 0 auto 29px;
+  object-fit: cover;
+  width: 85px;
+  height: auto;
+}
+
+.item__details {
+  color: var(--black-text-color);
+  text-align: center;
+  font-size: 12px;
+  line-height: 2.55;
+  font-weight: 500;
+  @media screen and(min-width:768px) and(max-width:1279px) {
+    font-size: 14px;
+    line-height: 2.16;
+  }
+  @media screen and(min-width:1280px) {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+
+.item__comment {
+  width: 280px;
+  background-color: var(--slider-background-color);
+  @media screen and(min-width:768px) and(max-width:1279px) {
+    width: 620px;
+    background-color: transparent;
+  }
+  @media screen and(min-width:1280px) {
+    width: 926px;
+  }
+  padding: 43px 50px 20px;
+  margin-bottom: 52px;
+  color: var(--black-text-color);
+  position: relative;
+  &::before {
+    content: '';
+    width: 54px;
+    height: 40px;
+    background-image: url('../images/quotes.svg');
+    position: absolute;
+    left: 61px;
+    top: 28px;
+  }
+}
+.item__text {
+  padding: 0 7px 0 16px;
+  background: repeating-linear-gradient(
+    transparent 0px,
+    transparent 29px,
+    var(--grey-svg-color) 29px,
+    var(--grey-svg-color) 30px
+  );
+  @media screen and(min-width:768px) {
+    background: repeating-linear-gradient(
+      transparent 0px,
+      transparent 28px,
+      var(--grey-svg-color) 28px,
+      var(--grey-svg-color) 29px
+    );
+  }
+  position: relative;
+}
+
+.item__commentators-place {
+  font-size: 14px;
+  line-height: 1.85;
+  margin-bottom: 30px;
+
+  @media screen and(min-width:768px) and(max-width:1279px) {
+    font-size: 16px;
+  }
+  @media screen and(min-width:1280px) {
+    font-size: 20px;
+  }
+}
+
+/* Пагинация */
+.slider-dots {
+  text-align: center;
+  line-height: 1;
+}
+
+.slider-dots_item {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: var(--slider-dots-color);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease, background-image 0.6s ease, border-radius 0.6s ease;
+  position: relative;
+  // Статические точки
+  &::before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: var(--slider-static-dots-color);
+    border-radius: 50%;
+    position: absolute;
+    top: -73px;
+  }
+  &:nth-child(1)::before {
+    left: 14px;
+  }
+  &:nth-child(2)::before {
+    left: 4px;
+  }
+  &:nth-child(3)::before {
+    left: -6px;
+  }
+}
+
+// Домик на пагинации
+.active {
+  background-image: url('../images/home.svg');
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.slider-dots_item:hover {
+  background-color: var(--slider-dots-hover-color);
+  border-radius: 50%;
+}
+
+/* Анимация слайдов */
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -4,6 +4,21 @@
     var(--background-pink-color) 40%,
     var(--white-text-color) 40%
   );
+
+  @media screen and(min-width:768px) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background-pink-color) 38%,
+      var(--white-text-color) 38%
+    );
+  }
+  @media screen and(min-width:1280px) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background-pink-color) 39%,
+      var(--white-text-color) 39%
+    );
+  }
   object-fit: contain;
 }
 .section-gallery .container {

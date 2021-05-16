@@ -1,0 +1,134 @@
+.footer {
+  background-color: var(--background-pink-color);
+}
+
+.text-footer-logo-first-part {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 17px 0;
+
+  color: var(--accent-color);
+}
+
+.text-footer-logo-second-part {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-color);
+  //   margin: 0 0 97px 0;
+}
+
+.tel {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  margin-left: 6px;
+}
+
+.contact-us-footer-section {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 46px;
+  font-size: 12px;
+}
+
+.contact-us-footer {
+  text-decoration: none;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--black-text-color);
+}
+
+.social-link {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.social-link-list-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 28.24px;
+}
+
+.social-link-list-item:last-child {
+  margin-right: 0;
+}
+
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  fill: currentColor;
+  color: var(--white-text-color);
+}
+
+.social-item:hover {
+  background-color: var(--main-color);
+}
+
+.all-rights-footer {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-top: 1px solid #e1e1e1;
+  background-color: var(--background-pink-color);
+}
+
+.footer__last-text {
+  width: 150px;
+  display: flex;
+  font-size: 14px;
+}
+
+.all-rights-text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #907e82;
+}
+
+.footer-part {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-block {
+  position: relative;
+  top: 0;
+  right: 0;
+  justify-content: flex-end;
+}
+
+.footer__label-thumb {
+  width: 275px;
+  margin-bottom: 23px;
+}

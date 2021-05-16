@@ -199,7 +199,7 @@
     (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../../images/ice_descktop.png);
+    // background-image: url(./images/ice_descktop.png);
     width: 236px;
     height: 557px;
 
@@ -535,7 +535,7 @@ header {
     @media screen and (min-width: 1280px) {
       width: 293px;
       height: 232px;
-      background-image: url(../../images/tasty_descktop.png);
+      background-image: url(../images/tasty_descktop.png);
       position: relative;
     }
   }

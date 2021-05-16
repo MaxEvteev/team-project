@@ -205,14 +205,17 @@
 
 // todo GO
 .contacts__block-btns {
+  padding-bottom: 113px;
   @media screen and(min-width:768px) and (max-width: 1279px) {
     display: flex;
     justify-content: center;
+    padding-bottom: 158px;
   }
 
   @media screen and(min-width:1280px) {
     display: flex;
     justify-content: center;
+    padding-bottom: 165px;
   }
 }
 

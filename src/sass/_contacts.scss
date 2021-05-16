@@ -254,17 +254,3 @@
     margin-right: 15px;
   }
 }
-
-// !Не удалось реализовать :hover из за наличия свойства fill в спрайте
-// .contacts__btn:hover {
-//   color: var(--white-text-color);
-//   background: var(--main-color);
-// }
-
-// .contacts__btn:hover .button__label {
-//   color: var(--white-text-color);
-// }
-
-// .contacts__btn:hover .contacts__svg {
-//   fill: var(--white-text-color);
-// }

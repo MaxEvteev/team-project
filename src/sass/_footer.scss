@@ -13,6 +13,14 @@
   margin: 0 0 17px 0;
 
   color: var(--accent-color);
+
+  @media screen and(min-width:768px) and (max-width: 1279px) {
+    font-size: 26px;
+  }
+
+  @media screen and(min-width:1280px) {
+    font-size: 30px;
+  }
 }
 
 .text-footer-logo-second-part {
@@ -24,7 +32,14 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-color);
-  //   margin: 0 0 97px 0;
+
+  @media screen and(min-width:768px) and (max-width: 1279px) {
+    font-size: 48px;
+  }
+
+  @media screen and(min-width:1280px) {
+    font-size: 58px;
+  }
 }
 
 .tel {
@@ -128,6 +143,7 @@
   @media screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 53px;
   }
 }
 
@@ -136,6 +152,7 @@
   top: 0;
   right: 0;
   justify-content: flex-end;
+  margin-bottom: 43px;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -145,20 +162,24 @@
 
 .footer__label-thumb {
   width: 275px;
-  margin-bottom: 23px;
+  margin-bottom: 43px;
+
+  @media screen and(min-width:768px) and (max-width: 1279px) {
+    width: 340px;
+  }
+
+  @media screen and(min-width:1280px) {
+    width: 475px;
+  }
 }
 
 .border-footer {
   border-top: 1px solid #e1e1e1;
   position: relative;
-  top: -120px;
+  top: -89px;
   width: 100%;
 
   @media screen and (min-width: 768px) {
     top: -89px;
   }
-}
-
-.footer-part:last-child {
-  display: none;
 }

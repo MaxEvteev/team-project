@@ -1,10 +1,21 @@
 .contacts {
   background-color: var(--background-pink-color);
+
+  @media screen and(min-width:768px) and (max-width: 1279px) {
+  }
+
+  @media screen and(min-width:1280px) {
+    // background-image: linear-gradient(
+    //   to bottom,
+    //   var(--background-pink-color) 100px,
+    //   var(--white-text-color)
+    // );
+  }
 }
 
 .contacts__bg {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
 
   background-image: url('../images/contacts__bg_2x.png');
   background-size: contain;
@@ -41,19 +52,23 @@
   @media screen and(min-width:768px) and (max-width: 1279px) {
     height: 544px;
     padding: 50px 31px;
-    margin-bottom: 81px;
+    margin: 0 20px 81px 0;
   }
 
   @media screen and(min-width:1280px) {
     width: 330px;
     height: 572px;
     padding: 52px 43px 61px;
-    margin-bottom: 86px;
+    margin: 0 30px 86px 0;
   }
 }
 
 .contacts__item:last-child {
   margin-bottom: 54px;
+
+  @media screen and(min-width:768px) {
+    margin-right: 0;
+  }
 }
 
 .contacts__type {
@@ -253,4 +268,27 @@
     width: 198px;
     margin-right: 15px;
   }
+}
+
+.contacts__svg {
+  fill: var(--main-color);
+}
+
+.contacts__btn:hover {
+  background: var(--main-color);
+}
+
+.contacts__btn:hover .button__label {
+  color: var(--white-text-color);
+}
+
+.contacts__btn:hover .contacts__svg {
+  fill: var(--white-text-color);
+}
+
+// ! ШАБЛОН ТОЧЕК ПЕРЕЛОМА
+@media screen and(min-width:768px) and (max-width: 1279px) {
+}
+
+@media screen and(min-width:1280px) {
 }

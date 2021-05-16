@@ -404,7 +404,7 @@ img {
 .contacts__bg {
   display: flex;
   justify-content: center;
-  background-image: url("../images/contacts__bg_2x.png");
+  background-image: url('../images/contacts__bg_2x.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -777,7 +777,7 @@ img {
   content: '';
   width: 54px;
   height: 40px;
-  background-image: url("../images/quotes.svg");
+  background-image: url('../images/quotes.svg');
   position: absolute;
   left: 61px;
   top: 28px;
@@ -785,13 +785,23 @@ img {
 
 .item__text {
   padding: 0 7px 0 16px;
-  background: repeating-linear-gradient(transparent 0px, transparent 29px, var(--grey-svg-color) 29px, var(--grey-svg-color) 30px);
+  background: repeating-linear-gradient(
+    transparent 0px,
+    transparent 29px,
+    var(--grey-svg-color) 29px,
+    var(--grey-svg-color) 30px
+  );
   position: relative;
 }
 
 @media screen and (min-width: 768px) {
   .item__text {
-    background: repeating-linear-gradient(transparent 0px, transparent 28px, var(--grey-svg-color) 28px, var(--grey-svg-color) 29px);
+    background: repeating-linear-gradient(
+      transparent 0px,
+      transparent 28px,
+      var(--grey-svg-color) 28px,
+      var(--grey-svg-color) 29px
+    );
   }
 }
 
@@ -855,7 +865,7 @@ img {
 
 .active,
 .slider-dots_item:hover {
-  background-image: url("../images/home.svg");
+  background-image: url('../images/home.svg');
   background-color: transparent;
   border-radius: 0;
 }
@@ -1036,24 +1046,32 @@ img {
   }
 }
 
-.footer-part:last-child {
-  display: none;
-}
-
 .section-gallery {
-  background-image: linear-gradient(to bottom, var(--background-pink-color) 40%, var(--white-text-color) 40%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--background-pink-color) 40%,
+    var(--white-text-color) 40%
+  );
   object-fit: contain;
 }
 
 @media screen and (min-width: 768px) {
   .section-gallery {
-    background-image: linear-gradient(to bottom, var(--background-pink-color) 38%, var(--white-text-color) 38%);
+    background-image: linear-gradient(
+      to bottom,
+      var(--background-pink-color) 38%,
+      var(--white-text-color) 38%
+    );
   }
 }
 
 @media screen and (min-width: 1280px) {
   .section-gallery {
-    background-image: linear-gradient(to bottom, var(--background-pink-color) 39%, var(--white-text-color) 39%);
+    background-image: linear-gradient(
+      to bottom,
+      var(--background-pink-color) 39%,
+      var(--white-text-color) 39%
+    );
   }
 }
 
@@ -1268,7 +1286,10 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px),
+  (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .ice-cream-mobile {
     width: 236px;
     height: 557px;

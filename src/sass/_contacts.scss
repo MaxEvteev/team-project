@@ -1,4 +1,3 @@
-// todo GO
 .contacts {
   background-color: var(--background-pink-color);
 }
@@ -10,6 +9,10 @@
   background-image: url('../images/contacts__bg_2x.png');
   background-size: contain;
   background-repeat: no-repeat;
+
+  @media screen and(max-width:1279px) {
+    background-image: none;
+  }
 }
 
 .contacts__list {
@@ -203,7 +206,6 @@
   }
 }
 
-// todo GO
 .contacts__block-btns {
   padding-bottom: 113px;
   @media screen and(min-width:768px) and (max-width: 1279px) {
@@ -251,18 +253,4 @@
     width: 198px;
     margin-right: 15px;
   }
-}
-
-.contacts__btn:hover {
-  color: var(--white-text-color);
-  background: var(--main-color);
-}
-
-.contacts__btn:hover .button__label {
-  color: var(--white-text-color);
-}
-
-// todo ЗАБРАТЬ ИЗ MAIN ИСПРАВЛЕННЫЙ SVG
-.contacts__btn:hover .contacts__svg {
-  fill: var(--white-text-color);
 }

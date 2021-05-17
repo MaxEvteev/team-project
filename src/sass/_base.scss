@@ -28,6 +28,14 @@ img {
   height: auto;
 }
 
+button {
+  cursor: pointer;
+}
+:hover {
+  transition-property: color, background-color, box-shadow; /* свойство */
+  transition-duration: 250ms; /* время */
+  transition-timing-function: var(--bezier-box); /* функция перехода */
+}
 .container {
   padding-left: 20px;
   padding-right: 20px;

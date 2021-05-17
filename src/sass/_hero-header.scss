@@ -415,9 +415,9 @@ header {
     @media screen and (min-width: 1280px) {
       width: 30px;
       height: 30px;
-      left: 44px;
+      left: 50px;
       position: relative;
-      bottom: 46px;
+      bottom: 40px;
     }
   }
 
@@ -467,11 +467,17 @@ header {
   }
 }
 .tablet-description__icon--second {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    position: relative;
+    bottom: 4px;
+    bottom: 25px;
+    left: 30px;
+  }
   @media screen and (min-width: 1280px) {
     position: relative;
     bottom: 4px;
-    bottom: 30px;
-    left: 47px;
+    bottom: 25px;
+    left: 60px;
   }
 }
 .tablet-description__text--second {
@@ -498,10 +504,11 @@ header {
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    top: 266px;
+    top: 263px;
   }
 
   @media screen and (min-width: 1280px) {
+    position: absolute;
     top: 444px;
     left: 940px;
   }

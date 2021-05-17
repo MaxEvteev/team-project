@@ -1,36 +1,37 @@
 .section-gallery {
   background-image: linear-gradient(
     to bottom,
-    var(--background-pink-color) 40%,
-    var(--white-text-color) 40%
+    var(--background-pink-color) 48px,
+    var(--white-text-color) 48px
   );
 
   @media screen and(min-width:768px) {
     background-image: linear-gradient(
       to bottom,
-      var(--background-pink-color) 38%,
-      var(--white-text-color) 38%
+      var(--background-pink-color) 100px,
+      var(--white-text-color) 100px
     );
   }
   @media screen and(min-width:1280px) {
     background-image: linear-gradient(
       to bottom,
-      var(--background-pink-color) 39%,
-      var(--white-text-color) 39%
+      var(--background-pink-color) 165px,
+      var(--white-text-color) 165px
     );
   }
   object-fit: contain;
-}
-.section-gallery .container {
-  display: flex;
-  justify-content: center;
-  @media screen and(max-width:480px) {
-    height: 122px;
-  }
-  @media screen and(min-width:768px) {
-    height: 264px;
-  }
-  @media screen and(min-width:1280px) {
-    height: 430px;
+
+  & .container {
+    display: flex;
+    justify-content: center;
+    @media screen and(max-width:480px) {
+      height: 122px;
+    }
+    @media screen and(min-width:768px) {
+      height: 264px;
+    }
+    @media screen and(min-width:1280px) {
+      height: 430px;
+    }
   }
 }
